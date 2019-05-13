@@ -1,13 +1,62 @@
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
     cursor:pointer;
-    display:inline-block;
+    display:grid;
     color:#FFF;
     font-size:2em;
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
+
+}
+.yellow{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    display: inline;
+    margin: 10px;
+}
+.green{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1 / -1;
+    grid-template-rows: minmax(auto-fill, 100px);
+}
+.red{
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3 ,fr)
+}
+
+.blue{
+    display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr)
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 20px;
+}
+/* .imgbox{
+    display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-gap: 10px;
+} */
+img{
+    width: 450px;
+    height: 450px;
 }
 
 .zone:hover {
